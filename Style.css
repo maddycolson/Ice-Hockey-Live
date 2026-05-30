@@ -44,3 +44,22 @@ nav a {
     width: 80%;
     border-radius: 8px;
 }
+nav{
+    background:#222;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.card{
+    background:#1e1e1e;
+    margin:20px auto;
+    width:80%;
+    padding:20px;
+    border-radius:10px;
+}
