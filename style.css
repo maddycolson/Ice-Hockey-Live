@@ -78,3 +78,19 @@ nav a{
     margin:0 15px;
     font-weight:bold;
 }
+nav{
+    background:#111;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00a8ff;
+}
