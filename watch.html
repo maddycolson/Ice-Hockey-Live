@@ -1,19 +1,39 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-<title>Watch Live</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Watch Live | Ice Hockey Live</title>
 
 <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
     background:#0a0a0a;
     color:white;
     font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    background:#000;
+    border-bottom:3px solid #00a8ff;
     text-align:center;
-    margin:0;
+    padding:20px;
+}
+
+header img{
+    max-width:300px;
 }
 
 nav{
     background:#111;
+    text-align:center;
     padding:15px;
 }
 
@@ -28,22 +48,123 @@ nav a:hover{
     color:#00a8ff;
 }
 
-.content{
+.hero{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.live-badge{
+    display:inline-block;
+    background:red;
+    color:white;
+    padding:8px 18px;
+    border-radius:20px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.match-title{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.match-info{
+    color:#ccc;
+    margin-bottom:30px;
+}
+
+.player-container{
+    max-width:1200px;
+    margin:0 auto;
+    padding:20px;
+}
+
+.player-box{
+    background:#111;
+    border-radius:12px;
+    overflow:hidden;
+    aspect-ratio:16/9;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.4rem;
+    color:#999;
+}
+
+.button{
+    display:inline-block;
+    margin-top:30px;
+    background:#00a8ff;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:#0088cc;
+}
+
+.info-section{
+    max-width:1200px;
+    margin:50px auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#111;
+    border-radius:12px;
+    padding:25px;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#00a8ff;
+}
+
+.card p{
+    color:#ccc;
+    line-height:1.6;
+}
+
+.sponsors{
+    text-align:center;
     padding:50px 20px;
 }
 
-.stream-box{
-    max-width:1200px;
-    margin:auto;
-    background:#111;
-    padding:20px;
-    border-radius:12px;
+.sponsors h2{
+    margin-bottom:25px;
 }
+
+.sponsor-box{
+    display:inline-block;
+    background:#111;
+    padding:20px 40px;
+    margin:10px;
+    border-radius:10px;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:30px;
+    border-top:3px solid #00a8ff;
+    margin-top:50px;
+}
+
 </style>
 
 </head>
 
 <body>
+
+<header>
+    <img src="ice-hockey-live.png" alt="Ice Hockey Live Logo">
+</header>
 
 <nav>
     <a href="index.html">Home</a>
@@ -52,25 +173,87 @@ nav a:hover{
     <a href="about.html">About</a>
 </nav>
 
-<div class="content">
+<section class="hero">
 
-<h1>Ice Hockey Live</h1>
+```
+<div class="live-badge">
+    LIVE EVENT
+</div>
 
-<h2>Live Stream Coming Soon</h2>
+<h1 class="match-title">
+    Altrincham Aardvarx vs Manchester Swarm
+</h1>
 
-<p>
-The live broadcast will appear here before puck drop.
+<p class="match-info">
+    Saturday • 7:00 PM • Live from Altrincham Ice Dome
 </p>
+```
 
-<div class="stream-box">
+</section>
 
-<!-- Replace this with your Vimeo embed code later -->
+<div class="player-container">
 
-<p>Live Stream Player</p>
+```
+<div class="player-box">
+
+    <!-- PASTE YOUR VIMEO EMBED CODE HERE -->
+
+    Stream Player Coming Soon
 
 </div>
 
+<a href="https://buy.stripe.com/test_cNi6ozcBO4F23Hf7jm5J600" class="button">
+    Buy Event Pass
+</a>
+```
+
 </div>
+
+<section class="info-section">
+
+```
+<div class="card">
+    <h3>Event Information</h3>
+    <p>
+        Watch the game live with professional commentary,
+        multiple camera angles and full match coverage.
+    </p>
+</div>
+
+<div class="card">
+    <h3>Viewing Requirements</h3>
+    <p>
+        A stable internet connection is recommended for the
+        best viewing experience on desktop, tablet or mobile.
+    </p>
+</div>
+
+<div class="card">
+    <h3>Support</h3>
+    <p>
+        If you experience issues accessing the stream,
+        please contact Ice Hockey Live support.
+    </p>
+</div>
+```
+
+</section>
+
+<section class="sponsors">
+
+```
+<h2>Event Sponsors</h2>
+
+<div class="sponsor-box">Sponsor Logo</div>
+<div class="sponsor-box">Sponsor Logo</div>
+<div class="sponsor-box">Sponsor Logo</div>
+```
+
+</section>
+
+<footer>
+    <p>© 2025 Ice Hockey Live. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
