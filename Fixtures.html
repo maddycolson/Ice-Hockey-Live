@@ -1,37 +1,261 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-<title>Fixtures</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fixtures | Ice Hockey Live</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    background:#000;
+    border-bottom:3px solid #00a8ff;
+    text-align:center;
+    padding:20px;
+}
+
+header img{
+    max-width:280px;
+}
+
+nav{
+    background:#111;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00a8ff;
+}
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+    background:linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
+    ),
+    url('https://images.unsplash.com/photo-1515703407324-5f753afd8be8?auto=format&fit=crop&w=1600&q=80');
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#ddd;
+    font-size:1.1rem;
+}
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.featured{
+    background:#111;
+    border-left:5px solid #00a8ff;
+    border-radius:12px;
+    padding:30px;
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.featured h3{
+    color:#00a8ff;
+    margin-bottom:10px;
+}
+
+.featured h2{
+    margin-bottom:15px;
+}
+
+.fixture-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.fixture-card{
+    background:#111;
+    border-radius:12px;
+    padding:25px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.fixture-card:hover{
+    transform:translateY(-5px);
+}
+
+.fixture-card h3{
+    margin-bottom:10px;
+}
+
+.fixture-card p{
+    margin-bottom:10px;
+    color:#ccc;
+}
+
+.button{
+    display:inline-block;
+    margin-top:15px;
+    background:#00a8ff;
+    color:white;
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:#0088cc;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+    border-top:3px solid #00a8ff;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
-<h1>Upcoming Fixtures</h1>
+    <img src="ice-hockey-live.png" alt="Ice Hockey Live Logo">
 </header>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="fixtures.html">Fixtures</a>
-<a href="watch.html">Watch Live</a>
+    <a href="index.html">Home</a>
+    <a href="Fixtures.html">Fixtures</a>
+    <a href="watch.html">Watch Live</a>
+    <a href="about.html">About</a>
 </nav>
 
-<div class="card">
-<h2>Manchester Storm vs Sheffield Steelers</h2>
-<p>Saturday 7:00 PM</p>
-<a class="button" href="#">
-Buy Pass £7.99
-</a>
+<section class="hero">
+    <h1>Upcoming Fixtures</h1>
+    <p>Watch live games and purchase event passes</p>
+</section>
+
+<section class="section">
+
+```
+<div class="featured">
+    <h3>FEATURED LIVE EVENT</h3>
+    <h2>Manchester Storm vs Sheffield Steelers</h2>
+    <p>Saturday • 7:00 PM</p>
+
+    <a href="#" class="button">
+        Buy Pass £7.99
+    </a>
 </div>
 
-<div class="card">
-<h2>Nottingham Panthers vs Coventry Blaze</h2>
-<p>Sunday 5:00 PM</p>
-<a class="button" href="#">
-Buy Pass £7.99
-</a>
+<div class="fixture-grid">
+
+    <div class="fixture-card">
+        <h3>Manchester Storm</h3>
+        <p>vs Sheffield Steelers</p>
+        <p>Saturday 7:00 PM</p>
+        <p>Live from Planet Ice Altrincham</p>
+
+        <a href="#" class="button">
+            Buy Pass
+        </a>
+    </div>
+
+    <div class="fixture-card">
+        <h3>Nottingham Panthers</h3>
+        <p>vs Coventry Blaze</p>
+        <p>Sunday 5:00 PM</p>
+        <p>Live from Motorpoint Arena</p>
+
+        <a href="#" class="button">
+            Buy Pass
+        </a>
+    </div>
+
+    <div class="fixture-card">
+        <h3>Guildford Flames</h3>
+        <p>vs Belfast Giants</p>
+        <p>Friday 7:30 PM</p>
+        <p>Live from Guildford Spectrum</p>
+
+        <a href="#" class="button">
+            Buy Pass
+        </a>
+    </div>
+
+    <div class="fixture-card">
+        <h3>Fife Flyers</h3>
+        <p>vs Dundee Stars</p>
+        <p>Saturday 6:30 PM</p>
+        <p>Live from Fife Ice Arena</p>
+
+        <a href="#" class="button">
+            Buy Pass
+        </a>
+    </div>
+
+    <div class="fixture-card">
+        <h3>Cardiff Devils</h3>
+        <p>vs Glasgow Clan</p>
+        <p>Sunday 6:00 PM</p>
+        <p>Live from Vindico Arena</p>
+
+        <a href="#" class="button">
+            Buy Pass
+        </a>
+    </div>
+
+    <div class="fixture-card">
+        <h3>Belfast Giants</h3>
+        <p>vs Manchester Storm</p>
+        <p>Wednesday 7:00 PM</p>
+        <p>Live from SSE Arena Belfast</p>
+
+        <a href="#" class="button">
+            Buy Pass
+        </a>
+    </div>
+
 </div>
+```
+
+</section>
+
+<footer>
+    <p>© 2025 Ice Hockey Live. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
