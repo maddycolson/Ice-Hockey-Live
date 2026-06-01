@@ -108,3 +108,31 @@ nav a:hover{
     box-shadow:0 0 30px rgba(0,168,255,0.4);
 }
 
+.matchup{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    margin-bottom:20px;
+}
+
+.team{
+    text-align:center;
+}
+
+.team img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+}
+
+.vs{
+    font-size:2rem;
+    font-weight:bold;
+    color:#00a8ff;
+}
+
+.date{
+    font-weight:bold;
+    margin-bottom:10px;
+}
