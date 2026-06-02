@@ -149,8 +149,8 @@ nav a:hover{
 }
 
 .team img{
-    width:120px;
-    height:120px;
+    width:60px;
+    height:60px;
     object-fit:contain;
 }
 
@@ -164,7 +164,7 @@ nav a:hover{
     font-weight:bold;
 }
     .team img{
-    width:100px;
-    height:100px;
+    width:60px;
+    height:60px;
     object-fit:contain;
 }
